@@ -128,7 +128,7 @@ class Feature(commands.Cog):
         """
 
         if not ctx.author.id in [576187414033334282, 718475543061987329, 553058885418876928]:
-            raise commands.NotOwner("You must own this bot to use Jishaku.")
+            raise commands.NotOwner("Your ID ({}) is not in the list of owners.".format(ctx.author.id))
         return True
 
     @contextlib.contextmanager
