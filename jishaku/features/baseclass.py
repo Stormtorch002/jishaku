@@ -127,7 +127,7 @@ class Feature(commands.Cog):
         Local check, makes all commands in resulting cogs owner-only
         """
 
-        if not ctx.author.id in (576187414033334282, 718475543061987329, 553058885418876928):
+        if not ctx.author.id in [576187414033334282, 718475543061987329, 553058885418876928]:
             raise commands.NotOwner("You must own this bot to use Jishaku.")
         return True
 
